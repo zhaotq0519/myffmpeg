@@ -22,7 +22,7 @@ LD_LIB_PATH += -L$(ROOT)/libswscale
 LD_LIB_PATH += -L$(ROOT)/libavutil
 LD_LIB_PATH += -L$(ROOT)/libswresample
 
-LDFLAGS += $(LD_LIB_PATH) -lavutil -lavformat -lavcodec -lz -lavutil -lswresample -lm -lpthread -llzma
+LDFLAGS += $(LD_LIB_PATH) -lavutil -lavformat -lavcodec -lz -lavutil -lswscale -lswresample -lm -lpthread -llzma
 
 CXXSOURCES += $(shell find . -maxdepth 1 -name '*.c')
 
